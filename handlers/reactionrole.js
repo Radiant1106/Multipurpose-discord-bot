@@ -23,7 +23,7 @@
         remove_others: false, // if true, it means that only 1 reaction role can be used at once
         Parameters: [ // Technically you could add infnite parameters (emojis), but discord just allows 20 at once on 1 message ...
             { Emoji: '🛑', Emojimsg: '🛑', Role: '831972743280590848' }, // Unicode emoji
-            { Emoji: '866089513654419466', Emojimsg: '<:Builder:866089513654419466>', Role: '845952370889981952' }, // Discord Custom Emoji
+            { Emoji: '866089513654419466', Emojimsg: '<:Builder:997540974525943889>', Role: '845952370889981952' }, // Discord Custom Emoji
             { Emoji: '🔥', Emojimsg: '🔥', Role: '844512850395398155' }, 
         ]
     }
