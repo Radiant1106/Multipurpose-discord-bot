@@ -41,7 +41,7 @@ module.exports = client => {
             if (!message.guild || message.guild.available === false || !message.channel || message.author.bot ) return;
             for(const user of [...message.mentions.users.values()]){
                 if(client.afkDB.has(message.guild.id + user.id)){
-                    await message.reply({content: `<:Crying:867724032316407828> **${user.tag}** went AFK <t:${Math.floor(client.afkDB.get(message.guild.id+user.id, "stamp") / 1000)}:R>!${client.afkDB.get(message.guild.id+user.id, "message") && client.afkDB.get(message.guild.id+user.id, "message").length > 1 ? `\n\n__His Message__\n>>> ${String(client.afkDB.get(message.guild.id+user.id, "message")).substring(0, 1800).split(`@`).join(`\`@\``)}` : "" }`}).then(msg=>{
+                    await message.reply({content: `<:crying:997551127908319352> **${user.tag}** went AFK <t:${Math.floor(client.afkDB.get(message.guild.id+user.id, "stamp") / 1000)}:R>!${client.afkDB.get(message.guild.id+user.id, "message") && client.afkDB.get(message.guild.id+user.id, "message").length > 1 ? `\n\n__His Message__\n>>> ${String(client.afkDB.get(message.guild.id+user.id, "message")).substring(0, 1800).split(`@`).join(`\`@\``)}` : "" }`}).then(msg=>{
                         setTimeout(()=>{
                             try{
                                 msg.delete().catch(() => {});

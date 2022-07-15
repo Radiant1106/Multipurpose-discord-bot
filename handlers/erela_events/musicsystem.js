@@ -389,7 +389,7 @@ function generateQueueEmbed(client, guildId, leave){
       new MessageEmbed()
         .setColor(es.color)
         .setFooter(client.getFooter(es))
-        .setImage(guild.banner ? guild.bannerURL({size: 4096}) : "https://imgur.com/jLvYdb4.png")
+        .setImage(guild.banner ? guild.bannerURL({size: 4096}) : "https://cdn.discordapp.com/attachments/952581672979820565/992019602274009228/CyberDevLandscape.png")
         .setTitle(`Start Listening to Music, by connecting to a Voice Channel and sending either the **SONG LINK** or **SONG NAME** in this Channel!`)
         .setDescription(`> *I support <:youtube:997460775742488708> Youtube, <:Spotify:997461107197362226> Spotify, <:soundcloud:825095625884434462> Soundcloud and direct MP3 Links!*`)
     ]
