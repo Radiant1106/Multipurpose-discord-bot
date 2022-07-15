@@ -8,9 +8,9 @@ module.exports = function (client, options) {
         enabled: false,
         message: "",
         log: false,
-        stopBoost: "<a:Server_Boosts:867777823468027924> {member} **stopped Boosting us..** <:Cat_Sad:867722685949804565>",
-        startBoost: "<a:Server_Boosts:867777823468027924> {member} **has boosted us!** <a:Light_Saber_Dancce:867721861462229013>",
-        againBoost: "<a:Server_Boosts:867777823468027924> {member} **has boosted us again!** <:Tada_WON:867724032207224833>",
+        stopBoost: "<a:booster:997547380675199026> {member} **stopped Boosting us..** <:Cat_Sad:997548087520268348>",
+        startBoost: "<a:booster:997547380675199026> {member} **has boosted us!** <a:Light_Saber_Dancce:997548488055341069>",
+        againBoost: "<a:booster:997547380675199026> {member} **has boosted us again!** <:Tada_WON:997548792234647705>",
       }
     })
     if(!client.settings.has(nM.guild.id)) return;
