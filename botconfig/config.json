@@ -1,0 +1,40 @@
+{
+    "token": "",
+    "prefix": "//",
+    "ownerIDS": [
+       "552060563602276362"
+    ],
+    "memer_api": "",
+    "status": {
+       "text": "{prefix} help | Loaded with {commands} commands.",
+       "text2": "dsc.gg/cyberdev",
+       "type": "PLAYING",
+       "url": "https://twitch.tv/#"
+    },
+    "clientsettings": {
+       "nodes": [
+          {
+             "host": "",
+             "password": "",
+             "port": 2111,
+             "retryDelay": 3000,
+             "identifier": "lavalink"
+          }
+       ]
+    },
+    "spotify": {
+       "clientSecret": "",
+       "clientID": ""
+    },
+    "settings": {
+       "leaveOnEmpty_Channel": {
+          "enabled": true,
+          "time_delay": 30000
+       },
+       "LeaveOnEmpty_Queue": {
+          "enabled": true,
+          "time_delay": 30000
+       },
+       "selfDeaf": true
+    }
+ }
