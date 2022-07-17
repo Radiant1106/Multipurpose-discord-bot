@@ -121,7 +121,7 @@ module.exports = {
         //send the menu msg
         let menumsg = await message.reply({
           embeds: [MenuEmbed],
-          components: [row1, row2, row3, row4, new MessageActionRow().addComponents(new MessageButton().setStyle("LINK").setURL("https://youtube.com/CyberneticsDevelopment").setLabel("Youtube Video").setEmoji("840260133686870036"))]
+          components: [row1, row2, row3, row4, new MessageActionRow().addComponents(new MessageButton().setStyle("LINK").setURL("https://youtube.com/CyberneticsDevelopment").setLabel("Youtube Video").setEmoji("997460775742488708"))]
         })
         //Create the collector
         const collector = menumsg.createMessageComponentCollector({

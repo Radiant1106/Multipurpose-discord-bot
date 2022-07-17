@@ -39,7 +39,7 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
           .setTitle(eval(client.la[ls]["cmds"]["music"]["playskip"]["variable1"]))
         ]});
       message.react("🔎").catch(()=>{})
-      message.react("840260133686870036").catch(()=>{})
+      message.react("997460775742488708").catch(()=>{})
       message.react(emoji?.react.skip_track).catch(()=>{})
 
       //play the SONG from YOUTUBE
