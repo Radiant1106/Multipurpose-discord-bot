@@ -128,7 +128,7 @@ async function similar(client, message, args, type, slashCommand) {
         // Connect to the voice channel and add the track to the queue
 
         player.connect();
-        try{message.react("863876115584385074").catch(() => {});}catch(e){console.log(String(e).grey)}
+        try{message.react("997469848810553394").catch(() => {});}catch(e){console.log(String(e).grey)}
         player.queue.add(track);
         player.play();
         player.pause(false);

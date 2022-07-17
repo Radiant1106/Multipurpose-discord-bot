@@ -339,7 +339,7 @@ module.exports = (c) => {
             "GREEN",
             "CHANNEL JOINED",
             `**User:** <@${newState.member.user.id}> (\`${newState.member.user.id}\`) (**${newState.member.user.tag}**)\n\nCHANNEL: <#${newState.channelId}> (\`${newState.channelId}\`)  ${newState.channel ? `(**${newState.channel?.name}**)` : ""}`,
-            "https://cdn.discordapp.com/attachments/849047781276647425/869529604296159282/863876115584385074.gif"
+            "https://cdn.discordapp.com/attachments/849047781276647425/869529604296159282/997469848810553394.gif"
             )
         }
         if (oldState.channelId && !newState.channelId) {

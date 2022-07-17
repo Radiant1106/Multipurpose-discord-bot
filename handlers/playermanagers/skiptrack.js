@@ -35,7 +35,7 @@ async function skiptrack(client, message, args, type, slashCommand) {
       player.set("messageid", message.id);
       player.set("playerauthor", message.author.id);
       player.connect();
-      try{message.react("863876115584385074").catch(() => {});}catch(e){console.log(String(e).grey)}
+      try{message.react("997469848810553394").catch(() => {});}catch(e){console.log(String(e).grey)}
       player.stop();
     }
     try {
@@ -96,7 +96,7 @@ async function skiptrack(client, message, args, type, slashCommand) {
       player.set("message", message);
       player.set("playerauthor", message.author.id);
       player.connect();
-      try{message.react("863876115584385074").catch(() => {});}catch(e){console.log(String(e).grey)}
+      try{message.react("997469848810553394").catch(() => {});}catch(e){console.log(String(e).grey)}
       //add track
       player.queue.add(res.tracks[0]);
       //play track

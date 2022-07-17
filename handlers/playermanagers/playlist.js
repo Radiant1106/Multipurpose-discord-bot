@@ -35,7 +35,7 @@ async function playlist(client, message, args, type, slashCommand = false) {
       player.set("message", message);
       player.set("playerauthor", message.author.id);
       player.connect();
-      try{message.react("863876115584385074").catch(() => {});}catch(e){console.log(String(e).grey)}
+      try{message.react("997469848810553394").catch(() => {});}catch(e){console.log(String(e).grey)}
       player.stop();
     }
     try {
@@ -88,7 +88,7 @@ async function playlist(client, message, args, type, slashCommand = false) {
       player.set("message", message);
       player.set("playerauthor", message.author.id);
       player.connect();
-      try{message.react("863876115584385074").catch(() => {});}catch(e){console.log(String(e).grey)}
+      try{message.react("997469848810553394").catch(() => {});}catch(e){console.log(String(e).grey)}
       //add track
       player.queue.add(res.tracks);
       //play track
