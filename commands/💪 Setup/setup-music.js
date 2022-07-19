@@ -82,10 +82,10 @@ module.exports = {
 };
 /**
   * @INFO
-  * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+  * Bot Coded by Radiant#1106 | https://discord.cyberneticsdev.tk
   * @INFO
-  * Work for Milrato Development | https://milrato.eu
+  * Work for Cybernetics Development | https://cyberneticsdev.tk
   * @INFO
-  * Please mention him / Milrato Development, when using this Code!
+  * Please mention him / Cybernetics Development, when using this Code!
   * @INFO
 */
