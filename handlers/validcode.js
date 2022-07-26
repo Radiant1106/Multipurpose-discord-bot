@@ -28,7 +28,7 @@ module.exports = client => {
                     message.content.includes("```ruby") ||
                     message.content.includes("```lua") ||
                     message.content.includes("```py") 
-                )) message.react("858405056238714930").catch(() => {})
+                )) message.react("1001336760413982722").catch(() => {})
             } catch (e) {
                 console.log(String(e.stack).grey.bgRed)
             }
