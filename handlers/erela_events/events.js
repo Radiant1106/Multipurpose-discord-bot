@@ -93,18 +93,17 @@ module.exports = (client) => {
         if(client.musicsettings.get(player.guild, "channel") && client.musicsettings.get(player.guild, "channel").length > 5){
           let messageId = client.musicsettings.get(player.guild, "message");
           let guild = client.guilds.cache.get(player.guild);
-          if(!guild)  
+          if(!guild) return 
           let channel = guild.channels.cache.get(client.musicsettings.get(player.guild, "channel"));
-          if(guild && channel && message) {
-            let channel = guild.channels.cache.get(musicsettings.channel);
-            let message = channel.messages.cache.get(messageId);
-            if(!message) message = await channel.messages.fetch(messageId).catch(() => null);
-            //edit the message so that it's right!
-            var data = require("./musicsystem").generateQueueEmbed(client, player.guild, true)
-            message?.edit(data).catch(() => null)
-            if(musicsettings.channel == player.textChannel){
-              return;
-            }
+          if(!channel) return 
+          let message = channel.messages.cache.get(messageId);
+          if(!message) message = await channel.messages.fetch(messageId).catch(()=>{});
+          if(!message) return
+          //edit the message so that it's right!
+          var data = require("./musicsystem").generateQueueEmbed(client, player.guild)
+          message.edit(data).catch(() => {})
+          if(client.musicsettings.get(player.guild, "channel") == player.textChannel){
+            return;
           }
         }
         if(player.textChannel && player.get("previoustrack")){
@@ -155,16 +154,16 @@ module.exports = (client) => {
               const { channel } = member.voice
               const player = client.manager.players.get(i?.guild.id);
               if (!player)
-                return i?.reply({content: "<a:no:997458422821818449> Nothing Playing yet", ephemeral: true})
+                return i?.reply({content: "<a:VTG_error:935038661303603210> Nothing Playing yet", ephemeral: true})
                 
               if (!channel)
                 return i?.reply({
-                  content: `<a:no:997458422821818449> **Please join a Voice Channel first!**`,
+                  content: `<a:VTG_error:935038661303603210> **Please join a Voice Channel first!**`,
                   ephemeral: true
                 })                  
               if (channel.id !== player.voiceChannel)
                 return i?.reply({
-                  content: `<a:no:997458422821818449> **Please join __my__ Voice Channel first! <#${player.voiceChannel}>**`,
+                  content: `<a:VTG_error:935038661303603210> **Please join __my__ Voice Channel first! <#${player.voiceChannel}>**`,
                   ephemeral: true
                 })
               
@@ -172,7 +171,7 @@ module.exports = (client) => {
                 return i?.reply({embeds: [new MessageEmbed()
                   .setColor(ee.wrongcolor)
                   .setFooter({text: `${ee.footertext}`, iconURL: `${ee.footericon}`})
-                  .setTitle(`<a:no:997458422821818449> **You are not a DJ and not the Song Requester!**`)
+                  .setTitle(`<a:VTG_error:935038661303603210> **You are not a DJ and not the Song Requester!**`)
                   .setDescription(`**DJ-ROLES:**\n${check_if_dj(client, i?.member, player.queue.current)}`)
                 ],
                 ephemeral: true});
@@ -268,7 +267,7 @@ module.exports = (client) => {
                   embeds: [new MessageEmbed()
                   .setColor(ee.color)
                   .setTimestamp()
-                  .setTitle(`${player.get(`autoplay`) ? `<a:tick:997462260417052722> **Enabled Autoplay**`: `<a:no:997458422821818449> **Disabled Autoplay**`}`)
+                  .setTitle(`${player.get(`autoplay`) ? `<a:VTG_tick:927612765382782987> **Enabled Autoplay**`: `<a:VTG_error:935038661303603210> **Disabled Autoplay**`}`)
                   .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true})))]
                 })
               }
@@ -303,7 +302,7 @@ module.exports = (client) => {
                   embeds: [new MessageEmbed()
                   .setColor(ee.color)
                   .setTimestamp()
-                  .setTitle(`${player.trackRepeat ? `<a:tick:997462260417052722> **Enabled Song Loop**`: `<a:no:997458422821818449> **Disabled Song Loop**`}`)
+                  .setTitle(`${player.trackRepeat ? `<a:VTG_tick:927612765382782987> **Enabled Song Loop**`: `<a:VTG_error:935038661303603210> **Disabled Song Loop**`}`)
                   .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true})))]
                 })
                 var data = generateQueueEmbed(client, player, track)
@@ -325,7 +324,7 @@ module.exports = (client) => {
                   embeds: [new MessageEmbed()
                   .setColor(ee.color)
                   .setTimestamp()
-                  .setTitle(`${player.queueRepeat ? `<a:tick:997462260417052722> **Enabled Queue Loop**`: `<a:no:997458422821818449> **Disabled Queue Loop**`}`)
+                  .setTitle(`${player.queueRepeat ? `<a:VTG_tick:927612765382782987> **Enabled Queue Loop**`: `<a:VTG_error:935038661303603210> **Disabled Queue Loop**`}`)
                   .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true})))]
                 })
                 var data = generateQueueEmbed(client, player, track)
@@ -478,11 +477,11 @@ module.exports = (client) => {
 };
 /**
 * @INFO
-* Bot Coded by Radiant#1106| https://github?.com/Radiant#1106/discord-js-lavalink-Music-Bot-erela-js
+* Bot Coded by Tomato#6966 | https://github?.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
 * @INFO
-* Work for Cybernetics Development | https://cyberneticsdev.tk
+* Work for Milrato Development | https://milrato.eu
 * @INFO
-* Please mention Him / Cybernetics Development, when using this Code!
+* Please mention Him / Milrato Development, when using this Code!
 * @INFO
 */
 
