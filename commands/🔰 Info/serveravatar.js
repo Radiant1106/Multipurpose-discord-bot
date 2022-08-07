@@ -19,9 +19,9 @@ module.exports = {
       message.reply({embeds: [new Discord.MessageEmbed()
       .setAuthor(handlemsg(client.la[ls].cmds.info.serveravatar.author, { servername: message.guild.name }), message.guild.iconURL({dynamic: true}), "https://discord.cyberneticsdev.tk")
       .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
-      .addField("<:arrow:997461697231061092> PNG",`[\`LINK\`](${message.guild.iconURL({format: "png"})})`, true)
-      .addField("<:arrow:997461697231061092> JPEG",`[\`LINK\`](${message.guild.iconURL({format: "jpg"})})`, true)
-      .addField("<:arrow:997461697231061092> WEBP",`[\`LINK\`](${message.guild.iconURL({format: "webp"})})`, true)
+      .addField("<:joines:992230927897997342> PNG",`[\`LINK\`](${message.guild.iconURL({format: "png"})})`, true)
+      .addField("<:joines:992230927897997342> JPEG",`[\`LINK\`](${message.guild.iconURL({format: "jpg"})})`, true)
+      .addField("<:joines:992230927897997342> WEBP",`[\`LINK\`](${message.guild.iconURL({format: "webp"})})`, true)
       .setURL(message.guild.iconURL({
         dynamic: true
       }))

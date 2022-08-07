@@ -62,13 +62,13 @@ module.exports = {
       embed.addField(client.la[ls].cmds.info.serverinfo.field9, "🤖 \`" + message.guild.members.cache.filter(member => member.user.bot).size + "\`", true)
       
 
-      embed.addField("**<:arrow:997461697231061092> Rules Channel:**", `${message.guild.rulesChannel ? `<#${message.guild.rulesChannelId}>`: "<a:no:997458422821818449> \`No Channel\`"}`, true)
-      embed.addField("**<:arrow:997461697231061092> Public Updates Channel:**", `${message.guild.publicUpdatesChannel ? `<#${message.guild.publicUpdatesChannelId}>`: "<a:no:997458422821818449> \`No Channel\`"}`, true)
-      embed.addField("**<:arrow:997461697231061092> AFK Channel:**", `${message.guild.afkChannel ? `<#${message.guild.afkChannelId}>`: "<a:no:997458422821818449> \`No Channel\`"}`, true)
+      embed.addField("**<:joines:992230927897997342> Rules Channel:**", `${message.guild.rulesChannel ? `<#${message.guild.rulesChannelId}>`: "<a:no:1005793164046630912> \`No Channel\`"}`, true)
+      embed.addField("**<:joines:992230927897997342> Public Updates Channel:**", `${message.guild.publicUpdatesChannel ? `<#${message.guild.publicUpdatesChannelId}>`: "<a:no:1005793164046630912> \`No Channel\`"}`, true)
+      embed.addField("**<:joines:992230927897997342> AFK Channel:**", `${message.guild.afkChannel ? `<#${message.guild.afkChannelId}>`: "<a:no:1005793164046630912> \`No Channel\`"}`, true)
 
-      embed.addField("**<:arrow:997461697231061092> NSFW Level:**", `\`${message.guild.nsfwLevel}\``, true)
-      embed.addField("**<:arrow:997461697231061092> Verifcation Level:**", `\`${message.guild.verificationLevel}\``, true)
-      embed.addField("**<:arrow:997461697231061092> Explicit Content Filter:**", `\`${message.guild.explicitContentFilter}\``, true)
+      embed.addField("**<:joines:992230927897997342> NSFW Level:**", `\`${message.guild.nsfwLevel}\``, true)
+      embed.addField("**<:joines:992230927897997342> Verifcation Level:**", `\`${message.guild.verificationLevel}\``, true)
+      embed.addField("**<:joines:992230927897997342> Explicit Content Filter:**", `\`${message.guild.explicitContentFilter}\``, true)
 
       embed.addField(client.la[ls].cmds.info.serverinfo.field10, "🟢 \`" + message.guild.members.cache.filter(member => member.presence && member.presence && member.presence.status != "offline").size + "\`", true)
       embed.addField(client.la[ls].cmds.info.serverinfo.field11, ":black_circle:\`" + message.guild.members.cache.filter(member => !member.presence || member.presence && member.presence.status == "offline").size + "\`", true)
@@ -77,7 +77,7 @@ module.exports = {
       embed.addField(client.la[ls].cmds.info.serverinfo.field13, `<a:nitro:833402717506502707> \`${boostlevel}\``, true)
       embed.addField(client.la[ls].cmds.info.serverinfo.field14, "👾 \`" + maxbitrate + " kbps\`", true)
       if(boosts >= 14){
-          embed.addField(`**<:arrow:997461697231061092> Vanity:**`, `${message.guild.vanityURLCode ? `https://discord.gg/${message.guild.vanityURLCode}` : "<a:no:997458422821818449> No Vanity-Invite"}`)
+          embed.addField(`**<:joines:992230927897997342> Vanity:**`, `${message.guild.vanityURLCode ? `https://discord.gg/${message.guild.vanityURLCode}` : "<a:no:1005793164046630912> No Vanity-Invite"}`)
       }
 
       let embeds = [];
@@ -100,14 +100,14 @@ module.exports = {
 
       if(message.guild.banner) {
         let embed2 = new Discord.MessageEmbed()
-        .setTitle(`**<:arrow:997461697231061092> SERVER BANNER:**`)
+        .setTitle(`**<:joines:992230927897997342> SERVER BANNER:**`)
         .setDescription(`[Download Link](${message.guild.bannerURL({size: 1024})})${message.guild.discoverySplash ? ` | [Link of Discovery Splash Image](${message.guild.discoverySplashURL({size: 4096})})`: ""}\n> This is the Image which is shown on the Top left Corner of this Server, where you see the Channels!`)
         .setImage(message.guild.bannerURL({size: 4096}))
         embeds.push(embed2);
       }
       else if(message.guild.discoverySplash) {
         let embed2 = new Discord.MessageEmbed()
-        .setTitle(`**<:arrow:997461697231061092> SERVER DISCOVERY SPLASH:**`)
+        .setTitle(`**<:joines:992230927897997342> SERVER DISCOVERY SPLASH:**`)
         .setDescription(`[Download Link](${message.guild.discoverySplashURL({size: 1024})})${message.guild.banner ? ` | [Link of Discovery Splash Image](${message.guild.bannerURL({size: 4096})})`: ""}\nThis is the Image you see when you get invited to this Server on the official Discord Website!`)
         .setImage(message.guild.discoverySplashURL({size: 4096}))
         embeds.push(embed2);

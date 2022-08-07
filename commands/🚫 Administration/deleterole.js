@@ -70,7 +70,7 @@ module.exports = {
       }); //collector for 5 seconds
       collector.on('collect', async b => {
           if (b?.user.id !== message.author.id)
-              return b?.reply(`<a:no:997458422821818449> **Only the one who typed ${prefix}help is allowed to react!**`, true)
+              return b?.reply(`<a:no:1005793164046630912> **Only the one who typed ${prefix}help is allowed to react!**`, true)
 
           edited = true;
           msg.edit({

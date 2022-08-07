@@ -50,7 +50,7 @@ module.exports = {
         return message.reply({embeds :[new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
-          .setTitle(`<a:no:997458422821818449> **This Channel is a Thread u can't Lock it!**`)
+          .setTitle(`<a:no:1005793164046630912> **This Channel is a Thread u can't Lock it!**`)
         ]});
 
 
@@ -76,7 +76,7 @@ module.exports = {
           message.reply({embeds :[new MessageEmbed()
             .setColor(es.color)
             .setFooter(client.getFooter(es))
-            .setTitle(`<a:tick:997462260417052722> **Successfully locked \`${channel.name}\` for ${users.length} Users and ${roles.length} Roles**`)
+            .setTitle(`<a:tick:1005792950099398676> **Successfully locked \`${channel.name}\` for ${users.length} Users and ${roles.length} Roles**`)
           ]});
         } else {
           await channel.permissionOverwrites.set([{
@@ -86,7 +86,7 @@ module.exports = {
           message.reply({embeds :[new MessageEmbed()
             .setColor(es.color)
             .setFooter(client.getFooter(es))
-            .setTitle(`<a:tick:997462260417052722> **Successfully locked \`${channel.name}\`**`)
+            .setTitle(`<a:tick:1005792950099398676> **Successfully locked \`${channel.name}\`**`)
           ]});
         }
       } else {
@@ -110,14 +110,14 @@ module.exports = {
           message.reply({embeds :[new MessageEmbed()
             .setColor(es.color)
             .setFooter(client.getFooter(es))
-            .setTitle(`<a:tick:997462260417052722> **Successfully locked \`${channel.name}\` for ${users ? users.length : 0} Users and ${roles ? roles.length : 0} Roles**`)
+            .setTitle(`<a:tick:1005792950099398676> **Successfully locked \`${channel.name}\` for ${users ? users.length : 0} Users and ${roles ? roles.length : 0} Roles**`)
           ]});
         } else {
           if(channel.permissionOverwrites.cache.filter(permission => permission.allow.toArray().includes("SEND_MESSAGES")).size < 1)
             return message.reply({embeds :[new MessageEmbed()
               .setColor(es.wrongcolor)
               .setFooter(client.getFooter(es))
-              .setTitle(`<a:no:997458422821818449> **This Channel is locked!**`)
+              .setTitle(`<a:no:1005793164046630912> **This Channel is locked!**`)
               .setDescription(`This usually means, that the Channel **PERMISSIONS** are so defined, that __none__ of them are NOT ALLOWING to send a Message!`)
             ]});
           await channel.permissionOverwrites.set(
@@ -146,7 +146,7 @@ module.exports = {
           message.reply({embeds :[new MessageEmbed()
             .setColor(es.color)
             .setFooter(client.getFooter(es))
-            .setTitle(`<a:tick:997462260417052722> **Successfully locked \`${channel.name}\`**`)
+            .setTitle(`<a:tick:1005792950099398676> **Successfully locked \`${channel.name}\`**`)
           ]});
         }
       }

@@ -48,7 +48,7 @@ module.exports = {
         return message.reply({embeds :[new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
-          .setTitle(`<a:no:997458422821818449> **This Channel is not a Thread**`)
+          .setTitle(`<a:no:1005793164046630912> **This Channel is not a Thread**`)
         ]});
       await channel.setArchived(true);
       if (client.settings.get(message.guild.id, `adminlog`) != "no") {

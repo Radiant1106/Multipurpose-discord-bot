@@ -55,7 +55,7 @@ module.exports = {
         embeduserinfo.setDescription(`[Download the Banner of **${user.tag}**](${banner}) <@${user.id}>`)
       } else {
         embeduserinfo.setColor(user.hexAccentColor ? user.hexAccentColor : es.color)
-        embeduserinfo.setTitle(`<a:no:997458422821818449> **Has no Banner!**`)
+        embeduserinfo.setTitle(`<a:no:1005793164046630912> **Has no Banner!**`)
       }
       message.reply({embeds: [embeduserinfo]})
   

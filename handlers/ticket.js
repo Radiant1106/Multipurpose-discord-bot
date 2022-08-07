@@ -77,7 +77,7 @@ module.exports = (client, preindex) => {
         if (client.setups.has(ticketchannel.id) && client.setups.has(ticketchannel.id, "ticketdata")) {
           let data = client.setups.get(ticketchannel.id, "ticketdata");
           if (data.state != "closed") {
-            return interaction?.reply({ content: `<a:no:997458422821818449> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true });
+            return interaction?.reply({ content: `<a:no:1005793164046630912> **You already have an Ticket!** <#${ticketchannel.id}>`, ephemeral: true });
           }
         }
       } catch {
@@ -269,7 +269,7 @@ module.exports = (client, preindex) => {
           })
         }
       }
-      await interaction?.editReply({ content: `<a:tick:997462260417052722> **Your Ticket is created!** <#${ch.id}>`, ephemeral: true });
+      await interaction?.editReply({ content: `<a:tick:1005792950099398676> **Your Ticket is created!** <#${ch.id}>`, ephemeral: true });
     }).catch(e => {
       interaction?.editReply({ content: ":x: **Something went wrong!**", ephemeral: true })
       console.error(e)

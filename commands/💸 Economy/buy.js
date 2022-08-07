@@ -63,7 +63,7 @@ module.exports = {
         itemsvalue += prize * data.items[`${itemarray}`];
       }
       //function for yes or no, if its buyable!
-      const p2b = (costs) => (Number(costs) > Number(data.balance)) ? "<a:no:997458422821818449>" : "<a:tick:997462260417052722>";
+      const p2b = (costs) => (Number(costs) > Number(data.balance)) ? "<a:no:1005793164046630912>" : "<a:tick:1005792950099398676>";
       //return some message!
       if (!args[0])
         return message.reply({embeds: [new MessageEmbed()

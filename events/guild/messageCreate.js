@@ -45,9 +45,9 @@ module.exports = async (client, message) => {
     if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.USE_EXTERNAL_EMOJIS))
       return message.reply(`:x: **I am missing the Permission to USE EXTERNAL EMOJIS**`).catch(()=>{})
     if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.EMBED_LINKS))
-      return message.reply(`<a:no:997458422821818449> **I am missing the Permission to EMBED LINKS (Sending Embeds)**`).catch(()=>{})
+      return message.reply(`<a:no:1005793164046630912> **I am missing the Permission to EMBED LINKS (Sending Embeds)**`).catch(()=>{})
     if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.ADD_REACTIONS))
-      return message.reply(`<a:no:997458422821818449> **I am missing the Permission to ADD REACTIONS**`).catch(()=>{})
+      return message.reply(`<a:no:1005793164046630912> **I am missing the Permission to ADD REACTIONS**`).catch(()=>{})
 
 
     //CHECK IF IN A BOT CHANNEL OR NOT
@@ -113,7 +113,7 @@ module.exports = async (client, message) => {
     if (command && !customcmd) {
       var musicData = client.musicsettings.get(message.guild.id);
       if(musicData.channel && musicData.channel == message.channel.id){
-        return message.reply("<a:no:997458422821818449> **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)}).catch(()=>{})
+        return message.reply("<a:no:1005793164046630912> **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)}).catch(()=>{})
       }
       if (command.length == 0) {
         if (unkowncmdmessage) {
@@ -223,7 +223,7 @@ module.exports = async (client, message) => {
                   return message.reply({embeds: [new MessageEmbed()
                     .setColor(ee.wrongcolor)
                     .setFooter(client.getFooter(es))
-                    .setTitle(`<a:no:997458422821818449> **You are not a DJ and not the Song Requester!**`)
+                    .setTitle(`<a:no:1005793164046630912> **You are not a DJ and not the Song Requester!**`)
                     .setDescription(`**DJ-ROLES:**\n${check_if_dj(client, message.member, player.queue.current)}`)
                   ],}).catch(()=>{})
                 }

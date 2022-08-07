@@ -109,11 +109,11 @@ module.exports = {
             let SetupNumber = menu?.values[0].split(" ")[0]
             handle_the_picks(menuoptiondataIndex, SetupNumber, menuoptiondata)
           }
-          else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+          else menu?.reply({content: `<a:no:1005793164046630912> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
         });
         //Once the Collections ended edit the menu message
         collector.on('end', collected => {
-          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:997462260417052722> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:1005792950099398676> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
         });
       }
 
@@ -187,7 +187,7 @@ module.exports = {
             return message.reply({embeds: [new Discord.MessageEmbed()
               .setTitle("The Settings of the Anti Mention System")
               .setColor(es.color)
-              .setDescription(`**Enabled:** ${thesettings.enabled ? "<a:tick:997462260417052722>" : "<a:no:997458422821818449>"}\n\n**Allowed Mentions / Message:** \`${thesettings.limit} Pings\``.substring(0, 2048))
+              .setDescription(`**Enabled:** ${thesettings.enabled ? "<a:tick:1005792950099398676>" : "<a:no:1005793164046630912>"}\n\n**Allowed Mentions / Message:** \`${thesettings.limit} Pings\``.substring(0, 2048))
               .setFooter(client.getFooter(es))]}
             );
           } break;

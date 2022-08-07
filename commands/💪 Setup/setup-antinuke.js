@@ -308,7 +308,7 @@ module.exports = {
           used1 = true;
           if(menu?.values[0] == "Information"){
             
-            await message.reply({ content: "<a:tick:997462260417052722> **The Current Anti-Nuke Settings**", embeds: [new MessageEmbed()
+            await message.reply({ content: "<a:tick:1005792950099398676> **The Current Anti-Nuke Settings**", embeds: [new MessageEmbed()
               .setColor(es.color)
               .setFooter(client.getFooter(es))
               .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable5"]))
@@ -524,7 +524,7 @@ module.exports = {
                     return message.reply({embeds: [new Discord.MessageEmbed()
                       .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable26"]))
                       .setColor(es.color)
-                      .setDescription(`<:leave:997470350105383003> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Bot add__ Whitelist (module)!**`.substring(0, 2048))
+                      .setDescription(`<:leavessss:993120411942400051> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Bot add__ Whitelist (module)!**`.substring(0, 2048))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_27"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable27"]))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_28"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable28"]))
                       .setFooter(client.getFooter(es))]
@@ -593,7 +593,7 @@ module.exports = {
                     return message.reply({embeds: [new Discord.MessageEmbed()
                       .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable32"]))
                       .setColor(es.color)
-                      .setDescription(`<:leave:997470350105383003> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Kick/Ban__ Whitelist (module)!**`.substring(0, 2048))
+                      .setDescription(`<:leavessss:993120411942400051> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Kick/Ban__ Whitelist (module)!**`.substring(0, 2048))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_33"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable33"]))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_34"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable34"]))
                       .setFooter(client.getFooter(es))]
@@ -662,7 +662,7 @@ module.exports = {
                     return message.reply({embeds: [new Discord.MessageEmbed()
                       .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable38"]))
                       .setColor(es.color)
-                      .setDescription(`<:leave:997470350105383003> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Create Role__ Whitelist (module)!**`.substring(0, 2048))
+                      .setDescription(`<:leavessss:993120411942400051> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Create Role__ Whitelist (module)!**`.substring(0, 2048))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_39"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable39"]))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_40"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable40"]))
                       .setFooter(client.getFooter(es))]
@@ -731,7 +731,7 @@ module.exports = {
                     return message.reply({embeds: [new Discord.MessageEmbed()
                       .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable44"]))
                       .setColor(es.color)
-                      .setDescription(`<:leave:997470350105383003> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Delete Role__ Whitelist (module)!**`.substring(0, 2048))
+                      .setDescription(`<:leavessss:993120411942400051> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Delete Role__ Whitelist (module)!**`.substring(0, 2048))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_45"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable45"]))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_46"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable46"]))
                       .setFooter(client.getFooter(es))]
@@ -800,7 +800,7 @@ module.exports = {
                     return message.reply({embeds: [new Discord.MessageEmbed()
                       .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable50"]))
                       .setColor(es.color)
-                      .setDescription(`<:leave:997470350105383003> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Channel Create__ Whitelist (module)!**`.substring(0, 2048))
+                      .setDescription(`<:leavessss:993120411942400051> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Channel Create__ Whitelist (module)!**`.substring(0, 2048))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_51"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable51"]))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_52"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable52"]))
                       .setFooter(client.getFooter(es))]
@@ -869,7 +869,7 @@ module.exports = {
                     return message.reply({embeds: [new Discord.MessageEmbed()
                       .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable56"]))
                       .setColor(es.color)
-                      .setDescription(`<:leave:997470350105383003> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Channel Delete__ Whitelist (module)!**`.substring(0, 2048))
+                      .setDescription(`<:leavessss:993120411942400051> **Removed \`[${removedroles.length}] Roles\` and \`[${removedusers.length}] Users\` from the __Anti Channel Delete__ Whitelist (module)!**`.substring(0, 2048))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_57"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable57"]))
                       .addField(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variablex_58"]), eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable58"]))
                       .setFooter(client.getFooter(es))]
@@ -900,11 +900,11 @@ module.exports = {
                 collector.stop();
                 menuselection2(menu);
               }
-              else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<a:no:1005793164046630912> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             });
             //Once the Collections ended edit the menu message
             collector.on('end', collected => {
-              menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:997462260417052722> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+              menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:1005792950099398676> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
             });
           
         
@@ -1244,7 +1244,7 @@ module.exports = {
                       client.on('interactionCreate',  (menu) => {
                         if (menu?.message.id === menumsg.id) {
                           if (menu?.user.id === cmduser.id) {
-                            if(used33) return menu?.reply({content: `<a:no:997458422821818449> You already selected something, this Selection is now disabled!`, ephemeral: true})
+                            if(used33) return menu?.reply({content: `<a:no:1005793164046630912> You already selected something, this Selection is now disabled!`, ephemeral: true})
                             let menuoptiondata = menuoptions.find(v => v.value == menu?.values[0])
                             let menuoptionindex = menuoptions.findIndex(v => v.value == menu?.values[0])
                             if(menu?.values[0] == "Cancel") return menu?.reply(eval(client.la[ls]["cmds"]["setup"]["setup-warn"]["variable3"]))
@@ -1257,7 +1257,7 @@ module.exports = {
                               handle_the_picks_X(menuoptionindex - 1, menuoptiondata)
                             }
                           }
-                          else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+                          else menu?.reply({content: `<a:no:1005793164046630912> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
                         }
                       });
                     }
@@ -1325,11 +1325,11 @@ module.exports = {
                   collector.stop();
                   menuselection3(menu);
                 }
-                else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+                else menu?.reply({content: `<a:no:1005793164046630912> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
               });
               //Once the Collections ended edit the menu message
               collector.on('end', collected => {
-                menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:997462260417052722> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+                menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:1005792950099398676> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
               });
             
           } 
@@ -1527,7 +1527,7 @@ module.exports = {
                   },
               },
           })
-            return menu?.reply({content: "<a:tick:997462260417052722> **Now using the Suggested Settings!**", embeds: [new MessageEmbed()
+            return menu?.reply({content: "<a:tick:1005792950099398676> **Now using the Suggested Settings!**", embeds: [new MessageEmbed()
               .setColor(es.color)
               .setFooter(client.getFooter(es))
               .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable82"]))
@@ -1586,11 +1586,11 @@ module.exports = {
             collector.stop();
             menuselection(menu);
           }
-          else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+          else menu?.reply({content: `<a:no:1005793164046630912> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
         });
         //Once the Collections ended edit the menu message
         collector.on('end', collected => {
-          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:997462260417052722> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:1005792950099398676> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
         });
       }
 

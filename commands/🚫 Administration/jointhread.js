@@ -48,25 +48,25 @@ module.exports = {
         return message.reply({embeds :[new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
-          .setTitle(`<a:no:997458422821818449> **You forgot to ping a CHANNEL**`)
+          .setTitle(`<a:no:1005793164046630912> **You forgot to ping a CHANNEL**`)
         ]});
       if(!channel.isThread())
         return message.reply({embeds :[new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
-          .setTitle(`<a:no:997458422821818449> **This Channel is not a Thread**`)
+          .setTitle(`<a:no:1005793164046630912> **This Channel is not a Thread**`)
         ]});
       await channel.join().then(()=>{
         message.reply({embeds :[new MessageEmbed()
           .setColor(es.color)
           .setFooter(client.getFooter(es))
-          .setTitle(`<a:tick:997462260417052722> **I joined \`${channel.name}\`**`)
+          .setTitle(`<a:tick:1005792950099398676> **I joined \`${channel.name}\`**`)
         ]});
       }).catch(()=>{
         message.reply({embeds :[new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
-          .setTitle(`<a:tick:997462260417052722> **I couldn't join \`${channel.name}\`**`)
+          .setTitle(`<a:tick:1005792950099398676> **I couldn't join \`${channel.name}\`**`)
         ]});
       })
       if (client.settings.get(message.guild.id, `adminlog`) != "no") {

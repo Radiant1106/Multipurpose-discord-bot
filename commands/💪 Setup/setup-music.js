@@ -37,7 +37,7 @@ module.exports = {
             .setFooter(client.getFooter(es))
             .setImage(message.guild.banner ? message.guild.bannerURL({size: 4096}) : "https://cdn.discordapp.com/attachments/952581672979820565/992019602274009228/CyberDevLandscape.png")
             .setTitle(`Start Listening to Music, by connecting to a Voice Channel and sending either the **SONG LINK** or **SONG NAME** in this Channel!`)
-            .setDescription(`> *I support <:youtube:997460775742488708> Youtube, <:Spotify:997461107197362226> Spotify, <:soundcloud:999383321106722826> Soundcloud and direct MP3 Links!*`)
+            .setDescription(`> *I support <:youtube:989585142194528276> Youtube, <:Spotify:989585121290125362> Spotify, <:soundcloud:999383321106722826> Soundcloud and direct MP3 Links!*`)
         ]
         //now we add the components!
         var components = [

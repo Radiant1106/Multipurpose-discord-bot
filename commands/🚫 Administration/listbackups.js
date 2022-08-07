@@ -18,7 +18,7 @@ module.exports = {
         
         let server = client.guilds.cache.get(args[0]) || message.guild;
         if(!server.me.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR)){
-            return message.reply(`<a:no:997458422821818449> **I am missing the ADMINISTRATOR Permission in ${server.name}!**`)
+            return message.reply(`<a:no:1005793164046630912> **I am missing the ADMINISTRATOR Permission in ${server.name}!**`)
         }
 
         let es = client.settings.get(message.guild.id, "embed");let ls = client.settings.get(message.guild.id, "language")
@@ -50,7 +50,7 @@ module.exports = {
         })
         let backups = client.backupDB.get(server.id, "backups")
         if(!backups || backups.length == 0) {
-            return message.reply(`<a:no:997458422821818449> **There are no Backups in ${server.name}**`)
+            return message.reply(`<a:no:1005793164046630912> **There are no Backups in ${server.name}**`)
         }
         message.reply({embeds: [
             new MessageEmbed()

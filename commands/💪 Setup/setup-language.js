@@ -99,10 +99,10 @@ module.exports = {
         client.on('interactionCreate',  (menu) => {
           if (menu?.message.id === menumsg.id) {
             if (menu?.user.id === cmduser.id) {
-              if(used1) return menu?.reply({content: `<a:no:997458422821818449> You already selected something, this Selection is now disabled!`, ephemeral: true})
+              if(used1) return menu?.reply({content: `<a:no:1005793164046630912> You already selected something, this Selection is now disabled!`, ephemeral: true})
               menuselection(menu);
             }
-            else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+            else menu?.reply({content: `<a:no:1005793164046630912> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
           }
         });
       }
@@ -159,7 +159,7 @@ module.exports = {
             let currentPage = 0;
             collector.on('collect', async b => {
                 if(b?.user.id !== message.author.id)
-                  return b?.reply(`<a:no:997458422821818449> **Only the one who typed ${prefix}setup-language is allowed to react!**`, true)
+                  return b?.reply(`<a:no:1005793164046630912> **Only the one who typed ${prefix}setup-language is allowed to react!**`, true)
                 if(b?.user.id == message.author.id && b?.message.id == helpmsg.id && b?.customId.includes("language_")){
                   b?.deferUpdate();
                   console.log(b?.user.id)

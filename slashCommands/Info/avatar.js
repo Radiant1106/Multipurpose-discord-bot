@@ -45,9 +45,9 @@ module.exports = {
         dynamic: true
       }), "https://discord.cyberneticsdev.tk")
       .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
-      .addField("<:arrow:997461697231061092> PNG", `[\`LINK\`](${user.displayAvatarURL({format: "png"})})`, true)
-      .addField("<:arrow:997461697231061092> JPEG", `[\`LINK\`](${user.displayAvatarURL({format: "jpg"})})`, true)
-      .addField("<:arrow:997461697231061092> WEBP", `[\`LINK\`](${user.displayAvatarURL({format: "webp"})})`, true)
+      .addField("<:joines:992230927897997342> PNG", `[\`LINK\`](${user.displayAvatarURL({format: "png"})})`, true)
+      .addField("<:joines:992230927897997342> JPEG", `[\`LINK\`](${user.displayAvatarURL({format: "jpg"})})`, true)
+      .addField("<:joines:992230927897997342> WEBP", `[\`LINK\`](${user.displayAvatarURL({format: "webp"})})`, true)
       .setURL(user.displayAvatarURL({
         dynamic: true
       }))

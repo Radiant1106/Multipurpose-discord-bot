@@ -18,7 +18,7 @@ module.exports = {
     try {   
       if(message.guild.banner) {
         let embed = new Discord.MessageEmbed()
-          .setTitle(`**<:arrow:997461697231061092> SERVER BANNER:**`)
+          .setTitle(`**<:joines:992230927897997342> SERVER BANNER:**`)
           .setColor(es.color)
           .setFooter(client.getFooter(es))
           .setDescription(`[Download Link](${message.guild.bannerURL({size: 1024})})${message.guild.discoverySplash ? ` | [Link of Discovery Splash Image](${message.guild.discoverySplashURL({size: 4096})})`: ""}\n> This is the Image which is shown on the Top left Corner of this Server, where you see the Channels!`)
@@ -26,7 +26,7 @@ module.exports = {
         message.reply({embeds: [embed]})
       } else {
         let embed = new Discord.MessageEmbed()
-          .setTitle(`<a:no:997458422821818449> **This Server has no Banner!**`)
+          .setTitle(`<a:no:1005793164046630912> **This Server has no Banner!**`)
           .setColor(es.color)
           .setFooter(client.getFooter(es))
           .setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)

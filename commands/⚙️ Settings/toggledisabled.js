@@ -20,7 +20,7 @@ module.exports = {
       return message.reply({embeds : [new MessageEmbed()
         .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
         .setFooter(client.getFooter(es))
-        .setTitle(`<a:tick:997462260417052722> ${client.settings.get(message.guild.id, "showdisabled") ? "Enabled": "Disabled"} Disabled-Cmds Showing`)
+        .setTitle(`<a:tick:1005792950099398676> ${client.settings.get(message.guild.id, "showdisabled") ? "Enabled": "Disabled"} Disabled-Cmds Showing`)
         .setDescription(`${client.settings.get(message.guild.id, "showdisabled") ? "I will now show disabled commands in the Help Menu" : "I will not show disabled Commands in the Help Menu"}`.substring(0, 2048))
       ]});
     } catch (e) {

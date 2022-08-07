@@ -48,8 +48,8 @@ module.exports = {
             client.settings.ensure(message.guild.id, {
               suggest: {
                 channel: "",
-                approvemsg: `<a:tick:997462260417052722> Accepted Idea! Expect this soon.`,
-                denymsg: `<a:no:997458422821818449> Thank you for the feedback, but we are not interested in this idea at this time.`,
+                approvemsg: `<a:tick:1005792950099398676> Accepted Idea! Expect this soon.`,
+                denymsg: `<a:no:1005793164046630912> Thank you for the feedback, but we are not interested in this idea at this time.`,
                 maybemsg: `💡 We are thinking about this idea!`,
                 duplicatemsg: `💢 This is a duplicated Suggestion`,
                 soonmsg: `👌 Expect this Feature Soon!`,
@@ -199,10 +199,10 @@ module.exports = {
                 .setFooter(client.getFooter(`Want to suggest something? Simply type it in this channel`, "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/light-bulb_1f4a1.png"))
               
             if(embed.fields[2]){
-              embed.fields[2].name == `<:arrow:997461697231061092> __Reason by **${message.author.tag}**:__`;
+              embed.fields[2].name == `<:joines:992230927897997342> __Reason by **${message.author.tag}**:__`;
               embed.fields[2].value == `>>> ${String(reason).substring(0, 1000)}`;
             } else {
-              embed.addField(`<:arrow:997461697231061092> __Reason by **${message.author.tag}**__`, `>>> ${String(reason).substring(0, 1000)}`)
+              embed.addField(`<:joines:992230927897997342> __Reason by **${message.author.tag}**__`, `>>> ${String(reason).substring(0, 1000)}`)
             }
             targetMessage.edit({embeds: [embed]})
             try{
